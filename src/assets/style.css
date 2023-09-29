@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.box {
+    display: inline-block;
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    transition: transform 200ms ease-in-out;
+}
+
+.trigger.clicked .box {
+    transform: translate(200px, 150px) rotate(20deg);
+}
+
+
+.item {
+    display: none;
+}
+
+.item.show {
+    display: block;
+}
+
+.carousel {
+    height: 200px;
+    width: 200px;
+    background-color: burlywood;
+}
+
+.carousel img {
+    max-height: 200px;
+}
